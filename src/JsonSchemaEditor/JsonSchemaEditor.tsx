@@ -21,11 +21,12 @@ export const JsonSchemaEditor = (props: SchemaEditorProps) => {
 	});
 
 	const jsonSchemaState = useState(schemaState.jsonSchema);
+	const font = 'Public Sans, sans-serif'
 
 	return (
 		<ChakraProvider theme={theme}>
 			{schemaState.isValidSchema ? (
-				<Flex m={2} direction="column">
+				<Flex m={2} direction="column" style={{fontFamily:font}}>
 					<SchemaRoot
 						onSchemaChange={onSchemaChange}
 						schemaState={schemaState.jsonSchema}
