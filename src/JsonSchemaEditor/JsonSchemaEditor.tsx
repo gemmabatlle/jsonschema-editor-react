@@ -21,7 +21,7 @@ export const JsonSchemaEditor = (props: SchemaEditorProps) => {
 	});
 
 	const jsonSchemaState = useState(schemaState.jsonSchema);
-	const font = 'Public Sans, sans-serif'
+	const font = 'Public Sans, sans-serif';
 
 	return (
 		<ChakraProvider theme={theme}>
